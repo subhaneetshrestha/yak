@@ -1,0 +1,15 @@
+node_modules
+Dockerfile
+.dockerignore
+.env
+.git
+.gitignore
+.prettierignore
+.prettierrc.json
+LICENSE
+nodemon.json
+README.md
+yarn.lock
+yarn-error.log
+.vscode
+docker-compose*

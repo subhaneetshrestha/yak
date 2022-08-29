@@ -1,6 +1,7 @@
 import compression from 'compression';
 import cors, { CorsOptions } from 'cors';
 import express, { Application } from 'express';
+import config from '../config';
 
 export default class App {
   init() {
@@ -21,9 +22,9 @@ export default class App {
     app.use(express.json());
     app.use(express.static(__dirname + '/'));
 
-    app.use('/api/v1');
+    // app.use('/api/v1');
     app.use('/*', (_, res) => res.status(404).send('Route not found'));
 
-    app.listen(process.env.PORT, () => console.log(`Listening at ${process.env.port}`));
+    app.listen(config.PORT, () => console.log(`Listening at ${config.PORT}`));
   }
 }
