@@ -39,3 +39,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Scripts
+*.sh
+

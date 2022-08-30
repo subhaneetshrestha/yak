@@ -21,6 +21,7 @@ export default class App {
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json());
     app.use(express.static(__dirname + '/'));
+    app.enable('trust proxy');
 
     // app.use('/api/v1');
     app.use('/*', (_, res) => res.status(404).send('Route not found'));
