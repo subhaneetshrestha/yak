@@ -1,4 +1,5 @@
 import App from './app';
+import { createContainer } from './containers';
 
-const app = new App();
-app.init();
+const container = await createContainer();
+new App(container).init();

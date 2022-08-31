@@ -15,3 +15,10 @@ services:
     environment:
       - NODE_ENV=development
     command: npm run dev
+
+  yak-mongo:
+    ports:
+      - '27017:27017'
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=yak
+      - MONGO_INITDB_ROOT_PASSWORD=Yukino@2022!
